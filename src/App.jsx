@@ -1,5 +1,6 @@
-import React, { component } from "react";
+//import React, { component } from "react";
 import Welcome from "./components/Welcome"; //import file Welcome.jsx
+import Support from "./components/Support";
 // class Welcome extends React.Component {
 //   constructor() {
 //     super();
@@ -33,7 +34,11 @@ function App() {
     <div className="container">
       <article>
         <hgroup>
-          <img src="images/group.svg" alt="StarGazers Group" />
+          <img
+            style={{ width: "50%" }}
+            src="images/group.svg"
+            alt="StarGazers Group"
+          />
           <Welcome name="First Project"></Welcome>
           {/* <Welcome />
           <Welcome2 name="second" />
@@ -50,9 +55,10 @@ function App() {
             known for their enthusiasm for science, for their love of fun, and
             their dedication to education.
           </p>
-          <button className="outline" onClick={() => alert("Hi there")}>
+          {/* <button className="outline" onClick={() => alert("Hi there")}>
             Click Me
-          </button>
+          </button> */}
+          <Support />
         </hgroup>
       </article>
     </div>
